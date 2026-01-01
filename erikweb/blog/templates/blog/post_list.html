@@ -3,7 +3,7 @@
 {% block content %}
     <h2>Posts</h2>
     {% for post in posts %}
-        <article>
+        <article class="bg-white">
             <h3><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h3>
             <p>{{ post.created_at|date:"F d, Y" }} by {{ post.author }}</p>
         </article>
