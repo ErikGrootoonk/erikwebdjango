@@ -19,3 +19,12 @@ class Post(models.Model):
 
     def get_absolute_url(self):
         return reverse('blog:post_detail', args=[self.slug])
+
+
+class Book(models.Model):
+    titel = models.CharField(max_length=200)
+    voornaam : models.CharField(max_length=200)
+    achternaam: models.CharField(max_length=200)
+    beschrijving: models.TextField()
+    taal: models.CharField(max_length=200)
+

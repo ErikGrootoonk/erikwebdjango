@@ -11,3 +11,6 @@ def post_detail(request, slug):
 
 def about(request):
     return render(request, 'blog/about.html', {'title': 'About'})
+
+def book_list(request):
+    return render(request, 'blog/books.html', {'title': 'Books'})
