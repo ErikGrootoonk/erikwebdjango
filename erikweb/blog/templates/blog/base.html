@@ -21,7 +21,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="{% url 'blog:post_list' %}">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="{% url 'blog:post_list' %}">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#books">Books</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'blog:books' %} ">Boeken</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     {% if user.is_authenticated %}
                     <li class="nav-item"></li><a class="nav-link" href="{% url 'admin:index' %}">Admin</a></li>

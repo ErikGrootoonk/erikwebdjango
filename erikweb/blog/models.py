@@ -23,8 +23,12 @@ class Post(models.Model):
 
 class Book(models.Model):
     titel = models.CharField(max_length=200)
-    voornaam : models.CharField(max_length=200)
-    achternaam: models.CharField(max_length=200)
-    beschrijving: models.TextField()
-    taal: models.CharField(max_length=200)
+    voornaam = models.CharField(max_length=200)
+    achternaam = models.CharField(max_length=200)
+    beschrijving = models.TextField(blank=True)
+    taal = models.CharField(max_length=200)
 
+    class Meta:
+        ordering = ['achternaam', 'voornaam', 'titel']
+    def __str__(self):
+        return f"{self.titel} - {self.voornaam} {self.achternaam}"
