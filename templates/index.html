@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home - erikweb{% endblock %}
+
+{% block content %}
+<div class="flex flex-col md:flex-row">
+    <div class="flex-col text-lg bg-cyan-50 p-6 m-6 md:w-1/2 rounded-lg shadow-lg">
+        <p class="font-bold text-xl mb-2">Welkom op ErikWeb</p>
+        <p class="mb-4">Dit is een persoonlijk blog over de dingen die me bezighouden</p>
+
+        <p class="font-bold text-xl mb-2">FODMAP beperkt dieet</p>
+        <p class="mb-4">
+            Ik heb onlangs het FODMAP beperkt dieet gevolgd, om te bepalen
+            waar mijn darmklachten en buikpijn vandaan komt.
+            Dit was een openbaring, omdat ik heel mijn leven allerlei
+            klachten van het bovenstaande had. Al na een paar dagen was het
+            effect merkbaar.
+            Op deze site een pagina met de FODMAP lijst, waarin je kunt
+            zoeken in welke groep een voedingsmiddel valt. Wanneer het niet
+            voorkomt,
+            is het of geen FODMAP of is het een samengesteld product. Kijk
+            dan op de ingrediëntenlijst, wellicht staat hier een FODMAP
+            ingrediënt bij.
+        </p>
+
+        <p class="font-bold text-xl mb-2">Haruki Murakami</p>
+        <p>
+            De laatste tijd ben ik veel aan het lezen van Haruki Murakami.
+            Dit is een japanse schrijver met een heel
+            eigen stijl. De hoofdpersonen hebben over het algemeen
+            onconventionele liefdesrelaties. De schrijfstijl
+            is vrij direct en alles wordt expliciet beschreven. Kijk voor
+            boeken die ik de laatste tijd gelezen heb op pagina
+            <a href="{% url 'boekenlijst' %}" class="font-bold text-cyan-800 hover:underline">boeken</a>
+        </p>
+    </div>
+
+    <div class="p-6 md:w-1/2">
+        <img src="{% static 'img/sbahn.jpg' %}" class="w-full h-auto rounded-lg shadow-lg" alt="S-Bahn">
+    </div>
+</div>
+{% endblock %}
