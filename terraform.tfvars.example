@@ -1,0 +1,13 @@
+# Example terraform.tfvars file
+# Copy this to terraform.tfvars and fill in the values
+
+resource_group_name     = "erikweb-rg"
+location                = "West Europe"
+postgres_server_name   = "erikweb-postgres"
+postgres_admin_username = "postgresadmin"
+postgres_admin_password = "YourStrongPassword123!"
+database_name           = "erikwebdb"
+app_service_plan_name   = "erikweb-plan"
+web_app_name            = "erikweb-app"
+django_secret_key       = "your-django-secret-key-here"
+allowed_hosts           = "erikweb-app.azurewebsites.net"
