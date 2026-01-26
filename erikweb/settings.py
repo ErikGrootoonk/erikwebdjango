@@ -4,7 +4,7 @@ from decouple import config
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'django-insecure-change-this-to-a-real-secret-key-in-production'
+SECRET_KEY = '=a_pwu+q4a_077i8sm4kk2nou6s9*x(hltqhvoh7+)mr@03)+!'
 
 DEBUG = config('DEBUG', default=False, cast=bool)
 SECRET_KEY = config('SECRET_KEY')
@@ -51,22 +51,22 @@ TEMPLATES = [
 WSGI_APPLICATION = 'erikweb.wsgi.application'
 
 # DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+#      'default': {
+#          'ENGINE': 'django.db.backends.postgresql',
+#          'NAME': config('DB_NAME'),
+#          'USER': config('DB_USER'),
+#          'PASSWORD': config('DB_PASSWORD'),
+#          'HOST': config('DB_HOST'),
+#          'PORT': '5432',
+#      }
+#  }
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': config('DB_NAME'),
-        'USER': config('DB_USER'),
-        'PASSWORD': config('DB_PASSWORD'),
-        'HOST': config('DB_HOST'),
-        'PORT': '5432',
-    }
-}
+     'default': {
+         'ENGINE': 'django.db.backends.sqlite3',
+         'NAME': BASE_DIR / 'db.sqlite3',
+     }
+ }
 
 
 AUTH_PASSWORD_VALIDATORS = [

@@ -20,7 +20,7 @@ resource "azurerm_postgresql_flexible_server" "postgres" {
   name                   = var.postgres_server_name
   resource_group_name    = azurerm_resource_group.rg.name
   location               = azurerm_resource_group.rg.location
-  version                = "13"
+  version                = "16"
   administrator_login    = var.postgres_admin_username
   administrator_password = var.postgres_admin_password
   storage_mb             = 32768
@@ -51,7 +51,7 @@ resource "azurerm_linux_web_app" "web_app" {
 
   site_config {
     application_stack {
-      python_version = "3.9"
+      python_version = "3.12"
     }
   }
 
