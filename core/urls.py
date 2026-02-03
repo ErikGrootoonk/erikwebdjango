@@ -9,6 +9,7 @@ urlpatterns = [
     path('fodmap/', views.fodmaplijst, name='fodmaplijst'),
     path('berlijn/', views.berlijn, name='berlijn'),
     path('verhalen/', views.verhalen, name='verhalen'),
+    path('de-groene-zon/', views.de_groene_zon, name='de_groene_zon'),
     path('weird/', views.weird, name='weird'),
 
     # API endpoints

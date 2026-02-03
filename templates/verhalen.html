@@ -3,10 +3,21 @@
 {% block title %}Verhalen- erikweb{% endblock %}
 
 {% block content %}
-<div class="container mx-auto p-6">
-    <div class="bg-cyan-50 p-6 rounded-lg shadow-lg">
-        <h1 class="text-2xl font-bold text-cyan-800 mb-4">Verhalen</h1>
-        <p class="text-gray-700">Content voor verhalen pagina...</p>
-    </div>
-</div>
+<div class="flex flex-col bg-cyan-600 bg-opacity-90 gap-4 text-white px-8 mx-auto max-w-xl mt-4">
+    <p class="font-semibold text-2xl mt-4">De Groene Zon</p>
+    <p>auteur: Erik Grootoonk, zomer 2023</p>
+
+    <p class="font-semibold text-lg">Het park</p>
+    <p>
+        Samuel ligt op zijn rug en kijkt naar de hemel. Het gras voelt zacht, de
+        wind ruist door bomen. De zon schijnt haar groenige licht op z'n
+        gezicht. Net als ieder jaar gaat Samuel naar het park. Vroeger stond
+        hier de bioscoop, de plek waar hij eens zijn verjaardag vierde. Zijn
+        gedachten drijven relatief langzaam voorbij. Samuel houdt ervan om zijn
+        verjaardag alleen te vieren in dit park. Dit is een bijzondere dag voor
+        Samuel die hij graag...
+    </p>
+
+    <a href="{% url 'de_groene_zon' %}" class="font-semibold text-lg"> Lees
+        verder...</a>
 {% endblock %}

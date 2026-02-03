@@ -1,12 +1,54 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}Berlijn - erikweb{% endblock %}
 
 {% block content %}
-<div class="container mx-auto p-6">
-    <div class="bg-cyan-50 p-6 rounded-lg shadow-lg">
-        <h1 class="text-2xl font-bold text-cyan-800 mb-4">Berlijn</h1>
-        <p class="text-gray-700">Content voor Berlijn pagina...</p>
+    <div class="container container-lg mx-auto grid grid-cols-1 gap-2 lg:grid-cols-3">
+
+    <img src="{% static 'img/claudio-schwarz-TScGhJM716g-unsplash.jpg' %}" class="object-scale-down max-h-96 p-2" alt="">
+    <div class=" bg-cyan-600 bg-opacity-90 text-white  m-2 max-h-96 p-2">
+        <div class="font-bold">Berlijn</div>
+        <p>
+            Mijn lievelingsstad is Berlijn.
+            Je kunt vele redenen opnoemen, maar het begint met een gevoel. De eerste keer dat ik in Berlijn was, ervoer
+            ik
+            een gevoel van vrijheid, dat ik nergens anders ervaren had. </br>
+            Het begint met de fysieke ruimte. Berlijn is erg ruim opgezet, er is veel plaats voor groen.
+            Verder heeft het te maken met de sfeer op straat, die naar mijn mening ook beïnvloed wordt door het grote
+            aantal <i>creatievelingen</i> die in deze stad leven. Je kunt zijn wie je bent.
+        </p>
     </div>
+
+    <img src="{% static 'img/sbahn.jpg' %}" class="object-scale-down max-h-96 p-2" alt="">
+    <div class="bg-cyan-600 bg-opacity-90 text-white  m-2 max-h-96 p-2">
+        <div class="font-bold">Wat kun je doen in Berlijn?</div>
+        <p>
+        <div class="font-bold">Muziek</div>
+        Berlijn is bekend om de dancescene, maar.... daar kan ik je niet veel over vertellen. Op één of andere manier
+        ben
+        ik daar nog niet aan
+        toegekomen. Het leuke is dat er voor ieder wat wils is.
+        Ik ga bijvoorbeeld graag naar live muziek kijken en daar heb je zeer veel goede podia voor in Berlijn.
+        </p>
+    </div>
+    <img src="{% static 'img/martin-waltz-street-photography-berlin3.jpg' %}" class="object-scale-down max-h-96 p-2" alt="">
+    <div class="bg-cyan-600 bg-opacity-90 text-white  m-2 max-h-96 p-2">
+        <div class="font-bold">Kunst</div>
+        <p>
+            Op het gebied van kunst is er veel te zien, bijvoorbeeld op het gebied van fotografie en streetart.
+            CO Berlin heeft vaak mooie tentoonstellingen. Er zijn veel kleine galleries met werk van één fotograaf of
+            beeldend
+            kunstenaar.
+            Online zijn er ook streetart kaarten te zien, zodat jezelf een route kunt samenstellen. Let er wel op dat je
+            je
+            niet verkijkt op de afstanden en op tijd de u of s-bahn neemt. Fietsen kan ook natuurlijk. Want dat is ook
+            erg leuk in
+            Berlijn.
+
+        </p>
+    </div>
+    <img src="{% static 'img/berliner-fernsehturm-kugel-leuchte.jpeg' %}" class="object-scale-down max-h-96 p-2" alt="">
+
 </div>
 {% endblock %}

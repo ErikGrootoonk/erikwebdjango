@@ -33,6 +33,11 @@ def verhalen(request):
     return render(request, 'verhalen.html')
 
 
+def de_groene_zon(request):
+    """De Groene Zon page view."""
+    return render(request, 'de_groene_zon.html')
+
+
 def weird(request):
     """Weird page view."""
     return render(request, 'weird.html')
